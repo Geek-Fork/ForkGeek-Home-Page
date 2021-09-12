@@ -2,6 +2,7 @@
    Author: Inovatik
    Description: Master CSS file
 */
+
 /*****************************************
 Table Of Contents:
 - General Styles
@@ -23,6 +24,7 @@ Table Of Contents:
 - Extra Pages
 - Media Queries
 ******************************************/
+
 /*****************************************
 Colors:
 - Backgrounds, navbar, buttons - blue #5f4dee
@@ -30,7 +32,8 @@ Colors:
 - Headings text - black #2f363b
 - Body text - dark gray #6b747b
 ******************************************/
-:root {
+
+:root{
   --background-color: #FFFFFF;
   --p-color: #6b747b;
   --a-color: #18acda;
@@ -56,7 +59,7 @@ Colors:
   --copyright-color: #000000;
 }
 
-.dark-mode:root {
+.dark-mode:root{
   --background-color: #053e7e;
   --p-color: #d9d9d9;
   --a-color: #ffffff;
@@ -82,13 +85,13 @@ Colors:
   --copyright-color: #000000;
 }
 
+
 /**************************/
 /*     General Styles     */
 /**************************/
-body {
+body{
   background-color: var(--background-color);
 }
-
 body,
 html {
   width: 100%;
@@ -103,9 +106,10 @@ html {
   fill: var(--cls-2-color);
 }
 
-.bg-between {
+.bg-between{
   background-color: var(--bg-between-color);
 }
+
 
 body,
 p {
@@ -246,8 +250,7 @@ a:hover {
 .btn-solid-lg:hover {
   border: 1px solid #111111;
   background-color: transparent;
-  color: #111111;
-  /* needs to stay here because of the forced color property of a tag */
+  color: #111111; /* needs to stay here because of the forced color property of a tag */
   text-decoration: none;
 }
 
@@ -344,8 +347,7 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-  display: block;
-  /* needed for proper display of the label in Firefox, IE, Edge */
+  display: block; /* needed for proper display of the label in Firefox, IE, Edge */
   width: 100%;
   padding-top: 1.125rem;
   padding-bottom: 0.125rem;
@@ -356,8 +358,7 @@ a:hover {
   font-size: 0.875rem;
   line-height: 1.875rem;
   transition: all 0.2s;
-  -webkit-appearance: none;
-  /* removes inner shadow on form inputs on ios safari */
+  -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -381,11 +382,9 @@ select {
 }
 
 .form-control-textarea {
-  display: block;
-  /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+  display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
   width: 100%;
-  height: 14rem;
-  /* used instead of html rows to normalize height between Chrome and IE/FF */
+  height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
   padding-top: 1.5rem;
   padding-left: 1.25rem;
   border: 1px solid #cbcbd1;
@@ -400,8 +399,7 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
   border: 1px solid #a1a1a1;
-  outline: none;
-  /* Removes blue border on focus */
+  outline: none; /* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -415,7 +413,7 @@ select {
   line-height: 1.25rem;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   vertical-align: -10%;
   margin-right: 0.5rem;
 }
@@ -484,11 +482,13 @@ input[type=checkbox] {
 }
 
 /* end of fade-move animation for details lightbox - magnific popup */
+
 /**********************/
 /*     Navigation     */
 /**********************/
 .navbar {
   background: var(--navbar-color);
+  //backdrop-filter: saturate(100%) blur(5px);
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 0.875rem;
@@ -516,8 +516,7 @@ input[type=checkbox] {
 
 .offcanvas-collapse {
   position: fixed;
-  top: 3.25rem;
-  /* adjusts the height between the top of the page and the offcanvas menu */
+  top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
   bottom: 0;
   left: 100%;
   width: 100%;
@@ -528,7 +527,8 @@ input[type=checkbox] {
   background-color: #111111;
   transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+  -webkit-transform 0.3s ease-in-out;
 }
 
 .offcanvas-collapse.open {
@@ -558,18 +558,19 @@ input[type=checkbox] {
 
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
-  animation: fadeDropdown 0.2s;
-  /* required for the fade animation */
+  animation: fadeDropdown 0.2s; /* required for the fade animation */
 }
 
 @keyframes fadeDropdown {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .navbar .dropdown-menu {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -601,6 +602,7 @@ input[type=checkbox] {
 }
 
 /* end of dropdown menu */
+
 .navbar .nav-item .btn-outline-sm {
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -789,8 +791,7 @@ input[type=checkbox] {
 }
 
 .tabs .tab-content {
-  width: 100%;
-  /* for proper display in IE11 */
+  width: 100%; /* for proper display in IE11 */
 }
 
 .tabs .image-container {
@@ -913,6 +914,7 @@ input[type=checkbox] {
 }
 
 /* end of action Button */
+
 /* Back Button */
 .lightbox-basic .btn-outline-reg.mfp-close.as-button {
   position: relative;
@@ -934,6 +936,7 @@ input[type=checkbox] {
 }
 
 /* end of back button */
+
 /* Close X Button */
 .lightbox-basic button.mfp-close.x-button {
   position: absolute;
@@ -945,6 +948,7 @@ input[type=checkbox] {
 }
 
 /* end of close x button */
+
 /*****************/
 /*     Video     */
 /*****************/
@@ -1041,7 +1045,9 @@ input[type=checkbox] {
     opacity: 0;
   }
 }
+
 /* end of video play button */
+
 /*******************/
 /*     Pricing     */
 /*******************/
@@ -1404,8 +1410,8 @@ a:hover.back-to-top {
   .header .header-decoration {
     height: 100px;
   }
-
   /* end of header */
+
   /* Footer */
   .footer-decoration {
     height: 40px;
@@ -1414,16 +1420,17 @@ a:hover.back-to-top {
   .footer-decoration .footer-frame {
     height: 40px;
   }
-
   /* end of footer */
+
   /* Extra Pages */
   .ex-basic-1 .text-box {
     padding: 1.75rem 2rem 0.875rem 2rem;
   }
-
   /* end of extra pages */
 }
+
 /* end of min-width 768px */
+
 /* Min-width 992px */
 @media (min-width: 992px) {
   /* General Styles */
@@ -1443,8 +1450,8 @@ a:hover.back-to-top {
     margin-right: auto;
     margin-left: auto;
   }
-
   /* end of general styles */
+
   /* Navigation */
   .navbar {
     padding-top: 1.75rem;
@@ -1456,7 +1463,7 @@ a:hover.back-to-top {
   .navbar.top-nav-collapse {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background: rgba(0, 0, 0, 0.8);
+    background: hsla(0, 0%, 0%, 0.8);
     backdrop-filter: saturate(100%) blur(5px);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
   }
@@ -1501,8 +1508,8 @@ a:hover.back-to-top {
   .navbar .nav-item .btn-outline-sm {
     margin-left: 0.875rem;
   }
-
   /* end of navigation */
+
   /* Header */
   .header {
     padding-top: 11rem;
@@ -1519,7 +1526,7 @@ a:hover.back-to-top {
   }
 
   .header .btn-solid-lg,
-.header .btn-outline-lg {
+  .header .btn-outline-lg {
     margin-right: 0.5rem;
     margin-left: 0;
   }
@@ -1532,8 +1539,8 @@ a:hover.back-to-top {
   .header .header-decoration {
     height: 160px;
   }
-
   /* end of header */
+
   /* Description */
   .cards-1 .card {
     display: inline-block;
@@ -1545,20 +1552,20 @@ a:hover.back-to-top {
     margin-right: 2rem;
     margin-left: 2rem;
   }
-
   /* end of description */
+
   /* Features */
   .tabs .image-container {
     margin-bottom: 0;
   }
-
   /* end of features */
+
   /* Details */
   .basic-1 .text-container {
     margin-bottom: 0;
   }
-
   /* end of details */
+
   /* Details Lightbox */
   .lightbox-basic {
     padding: 3rem 3rem;
@@ -1568,8 +1575,8 @@ a:hover.back-to-top {
     margin-bottom: 0;
     text-align: left;
   }
-
   /* end of details lightbox */
+
   /* Pricing */
   .cards-2 .card {
     display: inline-block;
@@ -1582,8 +1589,8 @@ a:hover.back-to-top {
     margin-right: 0.125rem;
     margin-left: 0.125rem;
   }
-
   /* end of pricing */
+
   /* Testimonials */
   .slider-2 .swiper-container {
     width: 87%;
@@ -1613,16 +1620,16 @@ a:hover.back-to-top {
     width: 22px;
     background-size: 22px 34px;
   }
-
   /* end of testimonials */
+
   /* Newsletter */
   .form-1 form {
     width: 550px;
     margin-right: auto;
     margin-left: auto;
   }
-
   /* end of newsletter */
+
   /* Footer */
   .footer-decoration {
     height: 60px;
@@ -1631,8 +1638,8 @@ a:hover.back-to-top {
   .footer-decoration .footer-frame {
     height: 60px;
   }
-
   /* end of footer */
+
   /* Extra Pages */
   .ex-cards-1 .card {
     display: inline-block;
@@ -1644,10 +1651,11 @@ a:hover.back-to-top {
     margin-right: 1rem;
     margin-left: 1rem;
   }
-
   /* end of extra pages */
 }
+
 /* end of min-width 992px */
+
 /* Min-width 1200px */
 @media (min-width: 1200px) {
   /* Navigation */
@@ -1656,8 +1664,8 @@ a:hover.back-to-top {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
-
   /* end of navigation */
+
   /* Header */
   .header {
     padding-top: 18rem;
@@ -1678,15 +1686,15 @@ a:hover.back-to-top {
   .header .header-decoration {
     height: 260px;
   }
-
   /* end of header */
+
   /* Customers */
   .slider-1 .slider-container {
     margin-right: 2rem;
     margin-left: 2rem;
   }
-
   /* end of customers */
+
   /* Description */
   .cards-1 .card {
     width: 320px;
@@ -1696,8 +1704,8 @@ a:hover.back-to-top {
     margin-right: 4.375rem;
     margin-left: 4.375rem;
   }
-
   /* end of description */
+
   /* Features */
   .tabs .nav-tabs {
     margin-bottom: 1.75rem;
@@ -1711,21 +1719,21 @@ a:hover.back-to-top {
     margin-top: 1.25rem;
     margin-left: 2rem;
   }
-
   /* end of features */
+
   /* Details */
   .basic-1 .text-container {
     margin-top: 1rem;
     margin-right: 3rem;
   }
-
   /* end of details */
+
   /* Details Lightbox */
   .lightbox-basic .image-container {
     margin-right: 1.5rem;
   }
-
   /* end of details lightbox */
+
   /* Pricing */
   .cards-2 .card {
     width: 334px;
@@ -1740,22 +1748,22 @@ a:hover.back-to-top {
     margin-right: 3rem;
     margin-left: 3rem;
   }
-
   /* end of pricing */
+
   /* Newsletter */
   .form-1 .form-container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-
   /* end of newsletter */
+
   /* Footer */
   .footer .text-container.second,
-.footer .text-container.third {
+  .footer .text-container.third {
     margin-left: 2rem;
   }
-
   /* end of footer */
+
   /* Extra Pages */
   .ex-cards-1 .card {
     width: 336px;
@@ -1765,9 +1773,7 @@ a:hover.back-to-top {
     margin-right: 2.875rem;
     margin-left: 2.875rem;
   }
-
   /* end of extra pages */
 }
-/* end of min-width 1200px */
 
-/*# sourceMappingURL=styles.css.map */
+/* end of min-width 1200px */
