@@ -1069,5 +1069,16 @@
     });
 </script>
 <!-- Custom scripts -->
+<script>
+    let lastThemeStored = localStorage.getItem("selected-theme");
+    if (lastThemeStored === "aqua") {
+        document.getElementById("banner-logo").src = "images/logo_aqua.svg";
+        link.href = "images/favicon_aqua.ico";
+        themeButton.classList.toggle("fa-fire");
+        themeButton.classList.toggle("fa-water");
+        $html.classList.toggle("dark-mode");
+    }
+</script>
+<!-- Custom scripts -->
 </body>
 </html>

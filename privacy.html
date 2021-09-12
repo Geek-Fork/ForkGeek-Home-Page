@@ -37,30 +37,30 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
-
         <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Geek Fork</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
-
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo_flame.svg" alt="alternative" id="banner-logo"/></a>
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        <div class="theme-zone">
+            <i class="fas fa-fire" id="theme-button" onclick="darkmode($(this));"></i>
+        </div>
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#features">Features</a>
+                    <a class="nav-link page-scroll" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#details">Details</a>
+                    <a class="nav-link page-scroll" href="#details">Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
+                    <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
@@ -78,11 +78,14 @@
                 </li>
             </ul>
             <span class="nav-item">
-                    <a class="btn-outline-sm" href="log-in.html">Log In</a>
-                </span>
-        </div> <!-- end of navbar-collapse -->
-    </div> <!-- end of container -->
-</nav> <!-- end of navbar -->
+                <a class="btn-outline-sm" href="log-in.html">Log In</a> &ensp;
+            </span>
+        </div>
+        <!-- end of navbar-collapse -->
+    </div>
+    <!-- end of container -->
+</nav>
+<!-- end of navbar -->
 <!-- end of navigation -->
 
 
@@ -324,5 +327,16 @@
 <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
 <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script src="js/dark-mode.js"></script> <!-- Custom scripts -->
+<script>
+    let lastThemeStored = localStorage.getItem("selected-theme");
+    if (lastThemeStored === "aqua") {
+        document.getElementById("banner-logo").src = "images/logo_aqua.svg";
+        link.href = "images/favicon_aqua.ico";
+        themeButton.classList.toggle("fa-fire");
+        themeButton.classList.toggle("fa-water");
+        $html.classList.toggle("dark-mode");
+    }
+</script>
 </body>
 </html>
