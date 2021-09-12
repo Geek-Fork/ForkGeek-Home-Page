@@ -35,7 +35,6 @@
     <link href="css/swiper.css" rel="stylesheet"/>
     <link href="css/magnific-popup.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/day-nigth-theme-button.css" rel="stylesheet"/>
     <link href="css/button.css" rel="stylesheet"/>
 
     <!-- Favicon  -->
@@ -56,8 +55,8 @@
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="toggle-btn p-0 border-0" id="night-toggle-btn" onclick="darkmode($(this));">
-            <input type="checkbox">
+        <div class="toggle-btn p-0 border-0" id="night-toggle-btn" onclick="toggleSwitchDarkMode($(this));">
+            <input type="checkbox" id="dark-mode-check-box">
             <span></span>
         </div>
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -1198,7 +1197,7 @@
 <script src="js/jquery.magnific-popup.js"></script>
 <!-- Magnific Popup for lightboxes -->
 <script src="js/scripts.js"></script>
-<script src="js/dark-mode.js"></script>
+<script rel="preload" src="js/dark-mode.js"></script>
 <script>
     $('.toggle').click(function (e) {
         e.preventDefault(); // The flicker is a codepen thing

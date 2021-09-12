@@ -36,13 +36,15 @@ Colors:
 :root{
   --background-color: #FFFFFF;
   --p-color: #6b747b;
+  --p-box-color: var(--p-color);
   --a-color: #18acda;
+  --h-color: #2f363b;
+  --h-box-color: var(--h-color);
   --navbar-color: hsla(0, 0%, 0%, 0.8);
   --gradiente-header-color: linear-gradient(to bottom, #000000, #d2273c);
   --gradiente-footer-color: linear-gradient(to top, #000000, #d2273c);
   --cls-1-color: var(--background-color);
   --cls-2-color: #d2273c;
-  --h-color: #2f363b;
   --section-title-color: #111111;
   --bg-between-color: #f5f6fb;
   --tab-nav-link-color: #c9d9ec;
@@ -62,6 +64,8 @@ Colors:
 .dark-mode:root{
   --background-color: #053e7e;
   --p-color: #d9d9d9;
+  --p-box-color: #02244B;
+  --h-box-color: #02244B;
   --a-color: #ffffff;
   --navbar-color: hsla(0, 0%, 0%, 0.8);
   --gradiente-header-color: linear-gradient(to bottom, #000000, #2070B9);
@@ -117,6 +121,10 @@ p {
   font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
+p.p-box{
+  color: var(--p-box-color);
+}
+
 h1 {
   color: var(--h-color);
   font-weight: 700;
@@ -139,6 +147,10 @@ h3 {
   font-size: 1.75rem;
   line-height: 2.25rem;
   letter-spacing: -0.2px;
+}
+
+h3.h-box{
+  color: var(--h-box-color);
 }
 
 h4 {
