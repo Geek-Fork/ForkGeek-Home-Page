@@ -79,6 +79,7 @@ Colors:
   --gradiente-footer-color: linear-gradient(to top, #000000, #2070B9);
   --cls-1-color: var(--background-color);
   --cls-2-color: #2070B9;
+  --cls-2-color-transparent: #2070b940;
   --h-color: #ffffff;
   --section-title-color: #d0d0d0;
   --bg-between-color: #02244B;
@@ -225,6 +226,20 @@ a {
 a:hover {
   color: #6b747b;
   text-decoration: underline;
+}
+
+/* Change Themes Button */
+.theme-zone {
+  width: 30px;
+  padding: 5px;
+  border: 2px solid var(--cls-2-color-transparent);
+  border-radius: 40%;
+  text-align: center;
+}
+
+.fas {
+  color: var(--cls-2-color);
+  cursor: pointer;
 }
 
 .no-line {
@@ -1358,14 +1373,14 @@ a.back-to-top {
   height: 42px;
   border-radius: 30px;
   /* background: #7461ff url("../images/up-arrow.png") no-repeat center 47%; */
-  background: #d62411 url("../images/up-arrow.png") no-repeat center 47%;
+  background: var(--cls-2-color-transparent) url("../images/up-arrow.png") no-repeat center 47%;
   background-size: 18px 18px;
   text-indent: -9999px;
 }
 
 a:hover.back-to-top {
   /* background-color: #4d3dc4; */
-  background-color: #ff8426;
+  background-color: var(--cls-2-color);
   transition: all ease 0.5s;
 }
 
