@@ -28,7 +28,6 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet"/>
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -38,22 +37,30 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
+
         <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Geek Fork</a> -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo_flame.svg" alt="alternative" id="banner-logo"/></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="toggle-btn p-0 border-0" id="night-toggle-btn" onclick="toggleSwitchDarkMode($(this));">
-            <input type="checkbox" id="dark-mode-check-box">
-            <span></span>
-        </div>
+
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#details">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
@@ -71,14 +78,11 @@
                 </li>
             </ul>
             <span class="nav-item">
-                <a class="btn-outline-sm" href="log-in.html">Log In</a> &ensp;
-            </span>
-        </div>
-        <!-- end of navbar-collapse -->
-    </div>
-    <!-- end of container -->
-</nav>
-<!-- end of navbar -->
+                    <a class="btn-outline-sm" href="log-in.html">Log In</a>
+                </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
 <!-- end of navigation -->
 
 
@@ -143,8 +147,8 @@
                     users, including research into our user demographics and user behaviour in order to improve our content and Services that are offered by the system and other
                     third party companies.</p>
                 <div class="text-box mb-5">
-                    <h3 class="h-box">Contact you about your account and provide customer</h3>
-                    <p class="p-box">Share aggregate (non-identifiable) statistics about users of the Services to prospective advertisers and partners. Keep you informed about the Services,
+                    <h3>Contact you about your account and provide customer</h3>
+                    <p>Share aggregate (non-identifiable) statistics about users of the Services to prospective advertisers and partners. Keep you informed about the Services,
                         features, surveys, newsletters, offers, surveys, newsletters, offers, contests and events we think you may find useful or which you have requested from us
                         sell or market Leon Landing Page products and services to you or in other parts.</p>
                 </div> <!-- end of text-box -->
@@ -165,7 +169,7 @@
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body p-box"><strong>To identify you</strong> when you login to your account so we can start or user security process for the entire session
+                            <div class="media-body"><strong>To identify you</strong> when you login to your account so we can start or user security process for the entire session
                                 and duration and the need to protect sensitive data for the user and their company
                             </div>
                         </li>
@@ -320,6 +324,5 @@
 <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
 <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
-<script rel="preload" src="js/dark-mode.js"></script>
 </body>
 </html>
