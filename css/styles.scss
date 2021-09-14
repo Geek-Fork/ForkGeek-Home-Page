@@ -33,8 +33,8 @@ Colors:
 - Body text - dark gray #6b747b
 ******************************************/
 
-:root{
-  --background-color: #FFFFFF;
+:root {
+  --background-color: #ffffff;
   --p-color: #6b747b;
   --p-box-color: var(--p-color);
   --a-color: #18acda;
@@ -61,32 +61,32 @@ Colors:
   --copyright-color: #000000;
   --light-box-color: #ffffff;
   --lightbox-basic-btn-solid-reg-text-color: #ffffff;
-  --lightbox-basic-btn-solid-reg-color: #02244B;
-  --lightbox-basic-btn-solid-reg-text-hover-color: #02244B;
+  --lightbox-basic-btn-solid-reg-color: #02244b;
+  --lightbox-basic-btn-solid-reg-text-hover-color: #02244b;
   --lightbox-basic-btn-solid-reg-hover-color: #ffffff;
   --lightbox-basic-btn-outline-reg-border-color: #2f363b;
   //--lightbox-basic-btn-outline-reg-border-hover-color:
-  --lightbox-basic-btn-outline-reg-text-color: #02244B;
+  --lightbox-basic-btn-outline-reg-text-color: #02244b;
   --lightbox-basic-btn-outline-reg-text-hover-color: #ffffff;
   --lightbox-basic-btn-outline-reg-color: #transparent;
   --lightbox-basic-btn-outline-reg-hover-color: #2f363b;
 }
 
-.dark-mode:root{
+.dark-mode:root {
   --background-color: #053e7e;
   --p-color: #d9d9d9;
-  --p-box-color: #02244B;
-  --h-box-color: #02244B;
+  --p-box-color: #02244b;
+  --h-box-color: #02244b;
   --a-color: #ffffff;
   --navbar-color: hsla(0, 0%, 0%, 0.8);
-  --gradiente-header-color: linear-gradient(to bottom, #000000, #2070B9);
-  --gradiente-footer-color: linear-gradient(to top, #000000, #2070B9);
+  --gradiente-header-color: linear-gradient(to bottom, #000000, #2070b9);
+  --gradiente-footer-color: linear-gradient(to top, #000000, #2070b9);
   --cls-1-color: var(--background-color);
-  --cls-2-color: #2070B9;
+  --cls-2-color: #2070b9;
   --cls-2-color-transparent: #2070b940;
   --h-color: #ffffff;
   --section-title-color: #d0d0d0;
-  --bg-between-color: #02244B;
+  --bg-between-color: #02244b;
   --tab-nav-link-color: #606a85;
   --tab-nav-link-border-color: #606a85;
   --tab-nav-link-active-color: #ffffff;
@@ -94,31 +94,30 @@ Colors:
   --btn-solid-reg-font-color: #111111;
   --btn-solid-reg-hover-color: #111111;
   --btn-solid-reg-font-hover-color: #ffffff;
-  --basic-2-color: #02244B;
+  --basic-2-color: #02244b;
   --media-body-color: #111111;
   --frequency-color: #9b9b9b;
   --testimonial-author: #ffffff;
   --copyright-color: #000000;
-  --light-box-color: #02244B;
-  --lightbox-basic-btn-solid-reg-text-color: #02244B;
+  --light-box-color: #02244b;
+  --lightbox-basic-btn-solid-reg-text-color: #02244b;
   --lightbox-basic-btn-solid-reg-color: #ffffff;
   --lightbox-basic-btn-solid-reg-text-hover-color: #ffffff;
-  --lightbox-basic-btn-solid-reg-hover-color: #02244B;
+  --lightbox-basic-btn-solid-reg-hover-color: #02244b;
   --lightbox-basic-btn-outline-reg-border-color: #ffffff;
   --lightbox-basic-btn-outline-reg-border-hover-color: transparent;
   --lightbox-basic-btn-outline-reg-text-color: #ffffff;
   --lightbox-basic-btn-outline-reg-text-hover-color: #ffffff;
-  --lightbox-basic-btn-outline-reg-hover-color: #2070B9;
+  --lightbox-basic-btn-outline-reg-hover-color: #2070b9;
   --lightbox-basic-btn-outline-reg-color: #transparent;
 }
-
 
 /**************************/
 /*     General Styles     */
 /**************************/
-body{
+body {
   background-color: var(--background-color);
-  min-width: 100vh;
+  min-height: 100vh;
 }
 body,
 html {
@@ -134,10 +133,9 @@ html {
   fill: var(--cls-2-color);
 }
 
-.bg-between{
+.bg-between {
   background-color: var(--bg-between-color);
 }
-
 
 body,
 p {
@@ -145,7 +143,7 @@ p {
   font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
-p.p-box{
+p.p-box {
   color: var(--p-box-color);
 }
 
@@ -173,7 +171,7 @@ h3 {
   letter-spacing: -0.2px;
 }
 
-h3.h-box{
+h3.h-box {
   color: var(--h-box-color);
 }
 
@@ -245,7 +243,6 @@ a:hover {
   color: var(--cls-2-color);
   cursor: pointer;
 }
-
 
 .no-line {
   text-decoration: none;
@@ -578,7 +575,7 @@ input[type="checkbox"] {
   transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
-  -webkit-transform 0.3s ease-in-out;
+    -webkit-transform 0.3s ease-in-out;
 }
 
 .offcanvas-collapse.open {
@@ -1382,7 +1379,7 @@ a.back-to-top {
   border-radius: 30px;
   /* background: #7461ff url("../images/up-arrow.png") no-repeat center 47%; */
   background: var(--cls-2-color-transparent) url("../images/up-arrow.png")
-  no-repeat center 47%;
+    no-repeat center 47%;
   background-size: 18px 18px;
   text-indent: -9999px;
 }
